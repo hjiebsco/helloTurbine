@@ -1,0 +1,18 @@
+{  
+   "family":"spike-hello-turbine",
+   "containerDefinitions":[  
+      {  
+         "name":"spike-hello-turbine",
+         "image":"186926840374.dkr.ecr.us-east-1.amazonaws.com/spike/hello/turbine",
+         "cpu":10,
+         "memory":300,
+         "portMappings":[  
+            {  
+               "hostPort":8083,
+               "containerPort":8083,
+               "protocol":"tcp"
+            }
+         ]
+      }
+   ]
+}

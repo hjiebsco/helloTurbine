@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: helloTurbine
+    
+server:
+  port: 8083
+  
+turbine:
+  aggregator:
+    clusterConfig: HELLOSERVICE
+  appConfig: HELLOSERVICE
+  
+eureka:
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://52.86.121.106:8761/eureka/
+
+logging:
+  level:
+    root: INFO
+    com.netflix.hystrix.AbstractCommand: TRACE
