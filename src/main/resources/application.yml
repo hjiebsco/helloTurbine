@@ -10,8 +10,8 @@ address:
   
 turbine:
   aggregator:
-    clusterConfig: HELLOSERVICE, SEARCH-SERVICE
-  appConfig: HELLOSERVICE, SEARCH-SERVICE
+    clusterConfig: HELLOSERVICE,SEARCH-SERVICE
+  appConfig: HELLOSERVICE,SEARCH-SERVICE
   
 eureka:
   client:
