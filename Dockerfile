@@ -10,4 +10,4 @@ COPY target/$MS_FILE $MS_HOME/
 
 WORKDIR $MS_HOME
 ENTRYPOINT ["sh", "-c"]
-CMD ["java -jar $MS_FILE"]
+CMD ["java -Xmx512m -jar $MS_FILE"]
